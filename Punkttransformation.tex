@@ -14,3 +14,83 @@
     
 \end{frame}
 
+\begin{frame}
+    \frametitle{Punkttransformation}
+    
+    Alte Koordinaten: $p_k, q_k$ \\
+    Neue Koordinaten: $P_k, Q_k$
+    
+    Punkttransformationen haben die Form
+    
+    \begin{align*}
+    q_1 &= f_1(Q_1,\ldots,Q_n) \\
+    &\quad\vdots \\
+    q_n &= f_n(Q_1,\ldots,Q_n)    
+    \end{align*}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kanonischer Integrand}
+    
+    Für eine Transformation gilt:
+        \begin{align*}
+        \dot{q}_k &= \frac{\partial H}{\partial p_k} \\
+        \dot{p}_k &= -\frac{\partial H}{\partial q_k}		
+        \end{align*}
+      \begin{center}  invariant \end{center} 
+        
+        \begin{displaymath}
+        \Longleftrightarrow
+        \end{displaymath}
+        
+      \begin{center} Lagrange-Funktion \end{center} 
+        \begin{displaymath}
+        L = \sum_{i=1}^n p_i \dot{q}_i - H
+        \end{displaymath}
+      \begin{center}  ist invariant. \end{center} 
+
+\end{frame}
+
+\begin{frame}
+    \begin{displaymath}
+    \sum_{i=1}^n p_i \dot{q}_i = H \qquad \text{invariant}
+    \end{displaymath}
+    
+    \begin{displaymath}
+    \Longleftarrow \qquad \sum_{i=1}^n p_i \partial q_i = \sum_{i=1}^n P_i \partial Q_i
+    \end{displaymath}
+    
+    für infinitesimale Änderungen der $q_i$.
+    
+\end{frame}
+
+\begin{frame}
+    Das kanonische Integral 
+    
+    \begin{displaymath}
+    A = \int_{t_1}^{t_2} \left( \sum_{i=1}^n p_i dq_i - H dt \right) 
+    \end{displaymath}
+    
+    kann in diesem Fall durch
+    
+    \begin{displaymath}
+    A = \int_{t_1}^{t_2} \left( \sum_{i=1}^n P_i dQ_i - H dt \right) 
+    \end{displaymath}
+    
+    ersetzt werden. \\
+    \vspace{5mm}
+    Die Hamilton-Funktion $H$ ist also Invariante dieser Transformation.
+    
+\end{frame}
+
+
+\begin{frame}
+   Die Transformation ist dann implizit gegeben:\\
+
+    \begin{displaymath}
+        \partial q_i = \frac{\partial f_i}{\partial Q_1} \partial Q_1 + \ldots +  \frac{\partial f_i}{\partial Q_n} \partial Q_n \qquad i=1,\ldots,n
+    \end{displaymath} \\
+   \vspace{5mm}      
+    \textbf{Wichtig:} Diese Einschränkungen sind hinreichend aber nicht notwendig für eine kanonische Transformation.
+\end{frame}
