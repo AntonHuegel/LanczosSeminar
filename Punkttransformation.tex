@@ -15,22 +15,6 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Punkttransformation}
-    
-    Alte Koordinaten: $p_k, q_k$ \\
-    Neue Koordinaten: $P_k, Q_k$
-    
-    Punkttransformationen haben die Form
-    
-    \begin{align*}
-    q_1 &= f_1(Q_1,\ldots,Q_n) \\
-    &\quad\vdots \\
-    q_n &= f_n(Q_1,\ldots,Q_n)    
-    \end{align*}
-    
-\end{frame}
-
-\begin{frame}
     \frametitle{Kanonischer Integrand}
     
     Für eine Transformation gilt:
@@ -58,7 +42,7 @@
     \end{displaymath}
     
     \begin{displaymath}
-    \Longleftarrow \qquad \sum_{i=1}^n p_i \partial q_i = \sum_{i=1}^n P_i \partial Q_i
+    \Longleftarrow \qquad \sum_{i=1}^n p_i \delta q_i = \sum_{i=1}^n P_i \delta Q_i
     \end{displaymath}
     
     für infinitesimale Änderungen der $q_i$.
@@ -69,13 +53,13 @@
     Das kanonische Integral 
     
     \begin{displaymath}
-    A = \int_{t_1}^{t_2} \left( \sum_{i=1}^n p_i dq_i - H dt \right) 
+    A = \int_{t_1}^{t_2} \left( \sum_{i=1}^n p_i \delta q_i - H dt \right) 
     \end{displaymath}
     
     kann in diesem Fall durch
     
     \begin{displaymath}
-    A = \int_{t_1}^{t_2} \left( \sum_{i=1}^n P_i dQ_i - H dt \right) 
+    A = \int_{t_1}^{t_2} \left( \sum_{i=1}^n P_i \delta Q_i - H dt \right) 
     \end{displaymath}
     
     ersetzt werden. \\
@@ -89,7 +73,7 @@
    Die Transformation ist dann implizit gegeben:\\
 
     \begin{displaymath}
-        \partial q_i = \frac{\partial f_i}{\partial Q_1} \partial Q_1 + \ldots +  \frac{\partial f_i}{\partial Q_n} \partial Q_n \qquad i=1,\ldots,n
+        \partial q_i = \frac{\partial f_i}{\partial Q_1} \delta Q_1 + \ldots +  \frac{\partial f_i}{\partial Q_n} \delta Q_n \qquad i=1,\ldots,n
     \end{displaymath} \\
    \vspace{5mm}      
     \textbf{Wichtig:} Diese Einschränkungen sind hinreichend aber nicht notwendig für eine kanonische Transformation.
