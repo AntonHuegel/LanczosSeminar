@@ -33,6 +33,20 @@
         \sum_{i=1}^{n} (p_i \delta q_i - P_i \delta Q_i) = \delta S
     \end{displaymath}
     
-    \begin{center} mit der generierenden Funktion $S = S(q_1,\ldots,q_n;Q_1,\ldots,Q_n)$ \end{center}
+    \begin{center} Wobei $S = S(q_1,\ldots,q_n;Q_1,\ldots,Q_n)$ \\ die \emph{generierende Funktion}  genannt wird.\end{center}
     
 \end{frame}
+
+\begin{frame}
+	Die Variation von $S$ ist
+	\begin{displaymath}
+		\delta S = \sum_{i=1}^{n} \left( \frac{\partial S}{\partial q_i} \delta q_i + \frac{\partial S}{\partial Q_i} \delta Q_i \right)
+	\end{displaymath}
+
+	Durch Koeffizientenvergleich ergibt sich
+	\begin{align*}
+		p_i &= \frac{\partial S}{\partial q_i} \\
+		P_i &= -\frac{\partial S}{\partial Q_i}
+	\end{align*}
+\end{frame}
+

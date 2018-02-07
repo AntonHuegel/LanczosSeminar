@@ -48,15 +48,33 @@
     \begin{center} \emph{Die charakteristische Funktion} \end{center}
 \end{frame}
 
+%\begin{frame}
+%    \begin{align*}
+%        \text{Prinzip d. kl. Wirkung: } \quad A &= 2 \int_{\tau_1}^{\tau_2} T~dt \\
+%         &=  \int_{\tau_1}^{\tau_2} \sum_{i=1}^{n} p_i \dot{q}_i ~dt \\
+%         &= \int_{\tau_1}^{\tau_2} \sum_{i=1}^{n} p_i ~ dq_i \\[5mm]
+%        \text{Energieerhaltung: } \quad  H&(q_1,\ldots,q_n,p_1,\ldots,p_n) - E = 0 \\[5mm]
+%      \Leftrightarrow  \text{Jacobi: } \quad \min A ~ \text{ mit } ~ A &= \sqrt{2} \int_{\tau_1}^{\tau_2} \sqrt{E-V} ~ d\bar{s}
+%    \end{align*}
+%\end{frame}
+
 \begin{frame}
-    \begin{align*}
-        \text{Prinzip d. kl. Wirkung: } \quad A &= 2 \int_{\tau_1}^{\tau_2} T~dt \\
-         &=  \int_{\tau_1}^{\tau_2} \sum_{i=1}^{n} p_i \dot{q}_i ~dt \\
-         &= \int_{\tau_1}^{\tau_2} \sum_{i=1}^{n} p_i ~ dq_i \\[5mm]
-        \text{Energieerhaltung: } \quad  H&(q_1,\ldots,q_n,p_1,\ldots,p_n) - E = 0 \\[5mm]
-      \Leftrightarrow  \text{Jacobi: } \quad \min A ~ \text{ mit } ~ A &= \sqrt{2} \int_{\tau_1}^{\tau_2} \sqrt{E-V} ~ d\bar{s}
-    \end{align*}
+	\frametitle{Hamiltons charakteristische Funktion}
+	
+	\begin{itemize}
+		\item Die Lösung von 
+		\begin{displaymath}
+			\frac{\partial S}{\partial t} + H = 0
+		\end{displaymath}
+		ist die kürzeste Verbindung auf der Energie-Ebene zwischen dem Anfangspunkt $q_1,\ldots,q_n$ und einem beliebigen weiteren Punkt $\bar{q}_1,\ldots,\bar{q}_n$ auf der zu $H$ gehörigen Trajektorie im Phasenraum.
+		
+		\item Eine solche Verbindungslinie wird auch Geodäte genannt
+		
+		\item Die Länge der gesuchten Geodäte bezeichnen wir mit $W=W(q_1,\ldots,q_n;\bar{q}_1,\ldots,\bar{q}_n;t)$;\\ $\rightarrow$ wird auch Hamiltons Grundfunktion (principal function) genannt.
+	\end{itemize}	
+	
 \end{frame}
+
 
 \begin{frame}
   \vspace*{-0.75cm} \hspace*{-2.3cm} \includegraphics[scale=0.4]{images/geodaete}
@@ -64,9 +82,8 @@
 
 \begin{frame}
     \begin{itemize}
-        \item Hamiltons charakteristische Funktion liefert die Länge der Geodäte zwischen Anfangs- und Endpunkt auf einer Energie-Fläche im Phasenraum
-        \item Hamiltons charakteristische Funktion ist die generierende Funktion für die zugehörige kanonische Transformation
+        \item Hamiltons Grundfunktion liefert die Länge der Geodäte zwischen Anfangs- und Endpunkt der Trajektorie auf der Energie-Fläche im Phasenraum
+        \item Diese Geodäte wird auch Hamiltons charakteristische Funktion genannt und ist die generierende Funktion für die zugehörige kanonische Transformation
         \item Die mit Hamiltons charakteristischer Funktion generierte kanonische Transformation beschreibt die Bewegung eines Partikels im Phasenfluid
-        \item $S(q_i,\ldots,q_n;Q_1,\ldots,Q_n;t)$ liefert für Anfangspunkte $Q_1,\ldots,Q_n$ für jedes $t>0$ die Lösungen $q_i(t),\ldots,q_n(t)$ der kanonischen Gleichungen 
      \end{itemize}
 \end{frame}
